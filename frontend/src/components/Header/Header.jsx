@@ -1,24 +1,23 @@
-import React from "react";
-import { Container, Row, Button } from "reactstrap";
-import { NavLink, Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
-import './header.css'
-
+import React from 'react'
+import { Container, Row, Button } from 'reactstrap'
+import { NavLink, Link } from 'react-router-dom'
+import Logo from '../../assets/images/logo.png'
+import "./header.css";
 
 const nav__links = [
   {
-    path: "/home",
-    display: "Home",
+     path: '/home',
+     display: 'Home'
   },
   {
-    path: "/about",
-    display: "About",
+     path: '/about',
+     display: 'About'
   },
   {
-    path: "/tours",
-    display: "Tours",
+     path: '/tours',
+     display: 'Tours'
   },
-];
+]
 
 const Header = () => {
   return (
@@ -28,7 +27,7 @@ const Header = () => {
           <div className="nav__wrapper d-flex align-items-center justify-content-between">
             {/* ============ logo ============ */}
             <div className="logo">
-              <img src={logo} alt="" />
+              <img src={Logo} alt="" />
             </div>
 
             {/* ============ logo end ============ */}
@@ -40,7 +39,7 @@ const Header = () => {
                   <li className="nav__item" key={index}>
                     <NavLink 
                       to={item.path} 
-                      className={navClass => navClass.isActive ? 'active__Link': ''}> {item.display} </NavLink>
+                      className={navClass => navClass.isActive ? 'active__link': ''}> {item.display} </NavLink>
                   </li>
                 ))}
               </ul>
@@ -49,9 +48,9 @@ const Header = () => {
             {/* ============ menu end ============ */}
 
             <div className="nav__right d-flex align-items-center gap-4">
-              <div className="nav__btns align-items-center gap-4">
-                <button className="btn secondary__btn"><Link to='/login'>Login</Link></button>
-                <button className="btn primary__btn"><Link to='/register'>Register</Link></button>
+              <div className="nav__btns d-flex align-items-center gap-4">
+                <Button className="btn secondary__btn"><Link to='/login'>Login</Link></Button>
+                <Button className="btn primary__btn"><Link to='/register'>Register</Link></Button>
               </div>
 
               <span className="mobile__menu">
