@@ -1,0 +1,62 @@
+/* AdminHeader.css */
+
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+  }
+  
+  .admin-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  .admin-search {
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f4;
+    border-radius: 30px;
+    padding: 6px 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.08);
+    margin: 10px 0;
+  }
+  
+  .search-icon {
+    color: gray;
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .search-input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+  }
+  
+  .admin-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-link {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #00bfa5;
+  }
+  
