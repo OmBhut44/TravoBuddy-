@@ -9,6 +9,9 @@ import Register from './../pages/Register';
 import SearchResultList from './../pages/SearchResultList';
 import ThankYou from '../pages/ThankYou';
 import AdminDashboard from '../admin/Dashboard';
+import ManageBooking from '../admin/ManageBooking';
+import Travelers from '../admin/Travelers';
+import Destination from '../admin/Destinations';
 
 const Routers = () => {
   return (
@@ -22,6 +25,9 @@ const Routers = () => {
         <Route path='/thank-you' element={<ThankYou/>} />
         <Route path='/tours/search' element={<SearchResultList/>}/>
         <Route path='/admin' element={<AdminDashboard />}/>
+        <Route path='/admin/booking' element={<ManageBooking />}/>
+        <Route path='/admin/destination' element={<Destination />}/>
+        <Route path='/admin/travellers' element={<Travelers />}/>
     </Routes>
   )
 }

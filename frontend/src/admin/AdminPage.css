@@ -1,0 +1,38 @@
+.admin-page {
+    padding: 100px 20px 40px 20px; /* Offset for fixed header */
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .admin-table th {
+    background-color: #f5f5f5;
+  }
+  
+  .destination-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .destination-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  

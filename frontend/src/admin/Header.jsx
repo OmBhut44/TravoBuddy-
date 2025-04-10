@@ -4,8 +4,8 @@ import "./AdminHeader.css";
 
 const AdminHeader = () => {
   return (
-    <header className="admin-header" >
-      <div className="admin-title">Manage AURA</div>
+    <header className="admin-header" style={{position: "fixed",width:"100%", top: 0, zIndex: 1000}}>
+      <div className="admin-title">Buddy's Traveller</div>
 
       <div className="admin-search">
         <span className="search-icon">🔍</span>
@@ -18,9 +18,9 @@ const AdminHeader = () => {
 
       <nav className="admin-nav">
         <Link to="/admin/" className="nav-link">Dashboard</Link>
-        <Link to="/admin/products" className="nav-link">Manage Products</Link>
-        <Link to="/admin/orders" className="nav-link">Orders</Link>
-        <Link to="/admin/users" className="nav-link">Users</Link>
+        <Link to="/admin/booking" className="nav-link">Manage Booking</Link>
+        <Link to="/admin/destination" className="nav-link">Destinations</Link>
+        <Link to="/admin/travellers" className="nav-link">Travelers</Link>
       </nav>
     </header>
   );
