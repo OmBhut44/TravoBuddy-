@@ -4,7 +4,7 @@ import "./AdminHeader.css";
 
 const AdminHeader = () => {
   return (
-    <header className="admin-header">
+    <header className="admin-header" >
       <div className="admin-title">Manage AURA</div>
 
       <div className="admin-search">
