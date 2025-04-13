@@ -1,22 +1,16 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import Header from './../Header/Header';
-import Footer from './../Footer/Footer';
-import Routers from '../../router/Routers';
+import React from 'react'
+import Header from './../Header/Header'
+import Routers from '../../router/Routers'
+import Footer from './../Footer/Footer'
 
 const Layout = () => {
-  const location = useLocation();
+   return (
+      <>
+         <Header />
+         <Routers />
+         <Footer />      
+      </>
+   )
+}
 
-  // Check if the current path is '/admin'
-  const isAdminRoute = location.pathname.startsWith('/admin');
-
-  return (
-    <>
-      {!isAdminRoute && <Header />}
-      <Routers />
-      {!isAdminRoute && <Footer />}
-    </>
-  );
-};
-
-export default Layout;
+export default Layout

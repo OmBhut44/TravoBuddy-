@@ -23,4 +23,4 @@ const ThankYou = () => {
    )
 }
 
-export default ThankYou;
+export default ThankYou
